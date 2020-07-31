@@ -1,0 +1,11 @@
+<div class="ui items">
+<product-row>
+    *ngFor="let myProduct of productList"
+    <!-- passing myProduct to the input product of the product-row -->
+    [product]= "myProduct"
+    (click)= 'clicked(myProduct)'
+    <!-- angular allows us to set classes conditonally on an element using this syntax -->
+    <!-- syntax says add the CSS class selected if isSelected(myProduct) returns true -->
+    [class.selected]="isSelected(myProduct)"
+</product-row>
+</div

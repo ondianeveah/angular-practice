@@ -1,0 +1,8 @@
+<div class="inventory-app">
+  <products-list
+  <!-- square brackets pass inputs -->
+  [productList]="products"
+  <!-- handles outputs -->
+  (onProductSelected)="productWasSelected($event)">
+  </products-list>
+  </div>
